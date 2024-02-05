@@ -1,0 +1,24 @@
+<button type="button" class="btn btn-primary" routerLink="/home">
+  return
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+  </svg>
+</button>
+<div class="container">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="pokemon?.sprites?.other?.['official-artwork']?.front_default" class="card-img-top mx-auto" style="width: 8rem;" alt= {{pokemon.name}}>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{pokemon.name}}
+            <span class="badge text-bg-info">{{pokemon.types[0].type.name}}</span>
+          </h5>
+          <span class="badge rounded-pill text-bg-light">{{pokemon.weight}}Kg</span>
+          <span class="badge rounded-pill text-bg-light">{{pokemon.height}}0cm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

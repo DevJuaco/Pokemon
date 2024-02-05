@@ -1,0 +1,17 @@
+<img src="../../assets/International_Pokémon_logo.svg.png" class="rounded mx-auto d-block header_image" alt="pokemon">
+  
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let pokemon of pokemons" routerLink="/pokemon/{{pokemon.id}}">
+      <div class="card text-center">
+        <img [src]="pokemon?.sprites?.other?.['official-artwork']?.front_default" class="card-img-top mx-auto" style="width: 8rem;" alt= {{pokemon.name}}>
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="badge rounded-pill text-bg-light">#{{pokemon.id}}</span>
+            {{pokemon.name}}
+          </h5>
+          <span class="badge text-bg-info">{{pokemon.types[0].type.name}}</span>
+          <span class="badge rounded-pill text-bg-light">{{pokemon.weight}}Kg</span>
+        </div>
+      </div>
+    </div>
+  </div>

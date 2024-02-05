@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    background-color: #eee; /* Cambia el color según tus necesidades */
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.header_image {
+    width: 20rem;
+    padding: 2rem;
+}
